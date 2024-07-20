@@ -16,33 +16,39 @@ import image6 from "../assets/images/project6.jpg";
 const images = [
   {
     id: 1,
+    repoUrl: "https://namahage1.github.io/myportfolio/",
     src: image1,
-    alt: "Assignment 1",
+    alt: "myportfolio",
   },
   {
     id: 2,
+    repoUrl: "https://note-taker-amn1.onrender.com",
     src: image2,
-    alt: "Assignment 2",
+    alt: "note taker",
   },
   {
     id: 3,
+    repoUrl: "https://github.com/namahage1/e-commerce.git",
     src: image3,
-    alt: "Assignment 3",
+    alt: "e-commerce",
   },
   {
     id: 4,
+    repoUrl: "https://cms-style-blog-site.onrender.com",
     src: image4,
-    alt: "Assignment 4",
+    alt: "cms-style-blog",
   },
   {
     id: 5,
+    repoUrl: "https://gist.github.com/51ec24120836cc3ed822331bf31f2fa2.git",
     src: image5,
-    alt: "Assignment 5",
+    alt: "Regular Expression Tutorial",
   },
   {
     id: 6,
+    repoUrl: "https://github.com/namahage1/portfolio.git",
     src: image6,
-    alt: "Assignment 6",
+    alt: "Portfolio",
   }
 ];
 

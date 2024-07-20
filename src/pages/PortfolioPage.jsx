@@ -40,32 +40,22 @@ const Project = ({ projects }) => {
   return (
     <div style={containerStyles}>
       <h1 style={titleStyles}>My Projects</h1>
-      <p>This is an example of projects loaded from GitHub:</p>
-      {images.map((image) => (
-        <img key={image.id} src={image.src} alt={image.alt} />
+      <h2>These are examples of projects (click images below):</h2>
+      {projects.map((project) => (
+        <a href={project.repoUrl} key={project.id} target="_blank" rel="noopener noreferrer">
+          <img src={project.src} alt={project.alt} style={imageStyles} />
+        </a>
       ))}
     </div>
   );
 };
 
 const Portfolio = () => {
-  const projects = [
-    {
-      repoUrl: "https://namahage1.github.io/myportfolio/",
-      imageName: "890842.jpg",
-      imageAlt: "Project 1"
-    },
-    {
-      repoUrl: "https://github.com/namahage1/anotherproject",
-      imageName: "another-image.jpg",
-      imageAlt: "Project 2"
-    },
-    // Add more projects as needed
-  ];
+  
   return (
     <div>
       <h1>My Portfolio</h1>
-      <Project projects={projects} />
+      <Project projects={images} />
     </div>
   );
 };
