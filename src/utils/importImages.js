@@ -4,7 +4,7 @@ import image3 from "../assets/images/project3.jpg";
 import image4 from "../assets/images/project4.jpg";
 import image5 from "../assets/images/project5.jpg";
 import image6 from "../assets/images/project6.jpg";
-
+import myPhoto from "../assets/images/ippei.png";
 // export function importAll(r) {
 //   let images = {};
 //   r.keys().forEach((item, index) => {
@@ -52,4 +52,4 @@ const images = [
   }
 ];
 
-export default images;
+export {images, myPhoto};

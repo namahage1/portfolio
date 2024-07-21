@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import images from '../utils/importImages'; // Import the images
+import {images} from '../utils/importImages'; // Import the images
 
 // Project component
 const Project = ({ projects }) => {
