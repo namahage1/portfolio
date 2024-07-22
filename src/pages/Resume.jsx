@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function Resume() {
   return (
     <>
-      <a href="/vite.svg" download>Download</a>
+      <a href="/SampleResume.pdf" download>Download</a>
     
       <div className="container pt-4">
       <h1>Work Experience</h1>
