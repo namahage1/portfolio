@@ -202,9 +202,6 @@ const Contact = () => {
       )}
         </div>
       </div>
-      <footer className="portfolio-footer">
-        <Link to="/">← Go Back</Link>
-      </footer>
     </>
   );
 };

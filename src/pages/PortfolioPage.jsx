@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import {images} from '../utils/importImages'; // Import the images
-
+import {images} from '../utils/importImages'; 
+import '../index.css'; 
 // Project component
 const Project = ({ projects }) => {
   useEffect(() => {
@@ -20,14 +20,18 @@ const Project = ({ projects }) => {
   }, []);
 
   const containerStyles = {
-    marginRight: '2em',
-    color: 'blue',
+    display: 'flex',
+    'flex-wrap': 'wrap',
+    'align-items': 'center',
+    'justify-content': 'center',
     backgroundColor: 'lightgrey',
     padding: '10px'
   };
 
   const titleStyles = {
-    fontSize: '24px'
+    fontSize: '24px',
+    textAlign: 'center',
+    color: '#0D98BA'
   };
 
   const imageStyles = {
@@ -38,14 +42,19 @@ const Project = ({ projects }) => {
   };
 
   return (
+    <div>
+    <h1 style={titleStyles}>My Projects</h1>
+      <h2 style={titleStyles}>These are examples of projects (click images below):</h2>
     <div style={containerStyles}>
-      <h1 style={titleStyles}>My Projects</h1>
-      <h2>These are examples of projects (click images below):</h2>
+      
+      <div class ="text-over-image">
       {projects.map((project) => (
         <a href={project.repoUrl} key={project.id} target="_blank" rel="noopener noreferrer">
-          <img src={project.src} alt={project.alt} style={imageStyles} />
+          <img src={project.src} alt={project.alt} style={imageStyles} class="thumbnail work-img"/>
         </a>
       ))}
+      </div>
+    </div>
     </div>
   );
 };
@@ -54,7 +63,6 @@ const Portfolio = () => {
   
   return (
     <div>
-      <h1>My Portfolio</h1>
       <Project projects={images} />
     </div>
   );
