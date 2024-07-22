@@ -12,7 +12,7 @@ const AboutPage = () => {
       <div className="container flex flex-column items-center justify-center m-12">
         <h1 className="flex">About Me</h1>
         <img src={myPhoto} alt="My Photo" style={imageStyles} />
-        <p className="flex">This is a brief description about me.</p>
+        <p className="flex">Seeking Java /Javascript full stack position</p>
       </div>
     </>
   );
