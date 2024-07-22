@@ -8,7 +8,7 @@
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies](#technologies)
-
+- [Links](#links)
 ## Installation
 - open the terminal and run npm i
 
@@ -43,5 +43,9 @@ Future Enhancements
 - CSS and Tailwind CSS: For styling and layout, ensuring a modern and visually appealing design.
 - FontAwesome: For incorporating icons, particularly for the social media links.
 - Validation and Error Handling: The contact form includes validation for inputs and displays helpful error messages to guide users.
+
+## Links
+- Github URL: https://github.com/namahage1/portfolio.git
+- Netlify URL : https://669edf923dd1ba5e08b82f0c--lustrous-quokka-b41c7d.netlify.app/
 
 
